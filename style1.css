@@ -1,0 +1,693 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+}
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    justify-content: space-between;
+    padding: 40px 0px;
+}
+
+.navbar__menu_container {
+    display: flex;
+    gap: 60px;
+}
+.navbar a {
+  height: 11px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 50px;
+  text-decoration:none;
+  color: #000000;
+  transition: all 0.3s ease-in-out;
+}
+.navbar a:hover {
+  transform: scale(1.05) ;
+  color:red;
+  font-size: 120%;
+}
+
+.navbar img {
+  width: 240px;
+  height: 130px;
+  padding: 1px;
+}
+.navbar .button4 {
+  background-color: #1B77CC;
+  border-radius: 30px;
+  padding: 1px 20px;
+  margin-right: 50px;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border: none;
+}
+
+.button4 a {
+  animation: animate 
+                2.5s linear infinite
+}
+
+@keyframes animate {
+  0% {
+      opacity: 0;
+  }
+
+  50% {
+      opacity: 0.7;
+  }
+
+  100% {
+      opacity: 0;
+      color:#ffffff;
+  }
+}
+
+.navbar h1 {
+    position: absolute;
+    width: 500px;
+    height: 51px;
+    top: 10px;
+    left: 170px;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 71px;
+    color: #001324;
+}
+
+
+.hero_section_container {
+    background: url(./images/Doc3.jpg);
+    background-size:cover;
+    background-position: center;
+    color: white;
+    min-height: 70vh;
+    overflow: auto;
+    display: flex;
+}
+
+.hero_section_title{
+  text-align: center;
+  color: #FFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 55vh;
+  letter-spacing: 1px;
+  line-height:1.2;
+}
+
+.hero_section_title h2 {
+  font-size: 90px;
+  font-family: "Audiowide", sans-serif;
+  text-shadow: 3px 3px 3px #ababab;
+  color: red;
+  animation: blink 2.5s linear infinite;
+}
+@keyframes blink{
+  0%{opacity: 5;}
+  50%{opacity: .5;}
+  100%{opacity: 1;}
+}
+
+h1 {
+    color: rgb(15, 14, 14);
+    font-size: 3rem;
+    font-weight: 90;
+    line-height: 1.5;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    width: 600px;
+  }
+  
+.button5{
+    background-color: #1B77CC;
+    border-radius: 60px;
+    padding: 8px 43px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    left: 40px;
+    border: none;
+    width: 234px;
+    height: 56px;
+    top: 410px;
+    margin-top: 10px;
+  }
+
+  
+
+  h1 span {
+    font-size: 50px;
+    margin-right: 150px;
+  }
+  
+  .message {
+    color: rgb(225, 14, 14);
+    display: block;
+    font-weight: 500;
+    overflow: hidden;
+    position: absolute;
+    padding-left: 0.5rem;
+    left: 270px;
+    animation: openclose 5s ease-in-out infinite;
+  }
+  
+  .word1, .word2, .word3 {
+    font-family: 'Merriweather', serif;
+  }
+  
+  @keyframes openclose {
+    0% {
+      top: 0.2rem;
+      width: 0;
+    }
+    5% {
+      width: 0;
+    }
+    15% {
+      width: 230px;
+    }
+    30% {
+      top: 0.2rem;
+      width: 230px;
+    }
+    33% {
+      top: 0.2rem;
+      width: 0;
+    }
+    35% {
+      top: 0.2rem;
+      width: 0;
+    }
+    38% {
+      top: -4.5rem;
+      
+    }
+    48% {
+      top: -4.5rem;
+      width: 190px;
+    }
+    62% {
+      top: -4.5rem;
+      width: 190px;
+    }
+    66% {
+      top: -4.5rem;
+      width: 0;
+      text-indent: 0;
+    }
+    71% {
+      top: -9rem;
+      width: 0;
+      text-indent: 5px;
+    }
+    86% {
+      top: -9rem;
+      width: 285px;
+    }
+    95% {
+      top: -9rem;
+      width: 285px;
+    }
+    98% {
+      top: -9rem;
+      width: 0;
+      text-indent: 5px;
+    }
+    100% {
+      top: 0;
+      width: 0;
+      text-indent: 0;
+    }
+  }
+
+
+
+  .container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10rem;
+  padding-top: 20px;
+}
+
+.card1 {
+    border-radius: 19px;
+    overflow: hidden;
+    border: 1px solid #e0e0e0;
+    transition: all 0.3s ease;   
+    background-color: #1B77CC;
+    width: 425px;
+    height:448px ;
+    z-index: 5px;
+}
+.card1 h1 {
+  width: 375px;
+  left: 25px;
+  padding: 25px;
+  font-size: 30px;
+  text-align:center;
+  justify-content:center;
+  font-weight: 800;
+  line-height: 170%;
+  color: #e1e0e0;
+}
+.card1 h2 {
+  text-align: center;
+  justify-content: center;
+  font-size: 23px;
+  text-align: center;
+  justify-content: center;
+  font-weight: 300;
+  color: #000000;
+}
+.card1:hover {
+    transform: scale(1.05);
+}
+.card1 a {
+  background-color:rgb(91, 136, 224); 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 30px 110px;
+  cursor: pointer;
+  box-shadow: 0 10px 16px 0 rgba(241, 8, 8, 0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  border-radius: 20px;
+}
+.card1 a:hover {
+  transform: scale(1.08);
+}
+
+.card2 {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #000000;
+  transition: all 0.3s ease;  
+  width: 300px;
+  height:448px ; 
+  background-color: white;
+  background-image:linear-gradient(to right, rgb(253, 251, 251) , rgb(229, 229, 229));
+}
+.card2 h1 {
+  width: 250px;
+  left: 20px;
+  font-size: 24px;
+  text-align: center;
+  justify-content: center;
+  font-weight: 800;
+  line-height: 170%;
+  color: #1B77CC;
+  padding-bottom: 12px;
+}
+.card2 h2 {
+  line-height: 170%;
+  font-size: 18px;
+  text-align: center;
+  justify-content: center;
+  font-weight: 500;
+}
+.card2:hover {
+  transform: scale(1.05);
+}
+.card2 a {
+  text-decoration: none;
+  color: #ecebf1;
+  background-color: #2f18b1; 
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 50px 65px;
+  cursor: pointer;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  border-radius: 20px;
+}
+ .card2 a:hover {
+  transform: scale(1.08);
+ }
+
+.card3 {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #000000;
+  transition: all 0.3s ease;  
+  width: 300px;
+  height:448px ; 
+  background-color: white;
+  background-image:linear-gradient(to right, rgb(253, 251, 251) , rgb(229, 229, 229));
+}
+.card3:hover {
+  transform: scale(1.05);
+}
+.card3 h1 {
+  width: 250px;
+  left: 20px;
+  font-size: 24px;
+  text-align: center;
+  justify-content: center;
+  font-weight: 800;
+  line-height: 170%;
+  color: #1B77CC;
+  padding-bottom: 12px;
+}
+.card3 h2 {
+  line-height: 170%;
+  font-size: 18px;
+  text-align: center;
+  justify-content: center;
+  font-weight: 500;
+}
+.card3 a {
+  background-color: #2f18b1; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 60px 65px;
+  cursor: pointer;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  border-radius: 20px;
+}
+.card3 a:hover {
+  transform: scale(1.08);
+}
+
+
+.footer {
+  width: 100%;
+}
+
+.navigation_container {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
+  width: 100%;
+  margin: auto;
+  gap: 8rem;
+  padding: 3rem 0;
+  background-color: #d7e3ed;
+}
+
+.uni {
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
+}
+.uni h5 {
+  width: 250px;
+  font-weight: 800;
+  font-size: 18px;
+  margin-bottom: 8px;
+  letter-spacing: 0.8px;
+}
+.uni p {
+  line-height: 1.5;
+}
+.uni p1 {
+  margin-top: 10px;
+}
+.uni p1 span {
+  color: #001324;
+  font-weight: 800;
+}
+
+.link__container {
+  display: flex;
+  flex-direction: column;
+}
+.link__container h5 {
+  font-weight: 800;
+  font-size: 18px;
+  margin-bottom: 8px;
+  letter-spacing: 0.8px;
+}
+
+.footer__link {
+  line-height: 1.8;
+  text-decoration: none;
+  color: gray;
+  font-size: 15px;
+  font-weight: 600;
+}
+.footer__link:hover {
+  color: black;
+}
+
+.link__container1 {
+  display: flex;
+  flex-direction: column;
+}
+.link__container1 h5 {
+  text-align: center;
+  font-weight: 800;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.social__links_container {
+  display: flex;
+  gap: 0.8rem;
+}
+.social__links_container button {
+  background-color: black;
+  border: none;
+  width: 35px;
+  height: 35px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.social__links_container button i {
+  color: white;
+  font-size: 15px;
+}
+.social__links_container button:hover {
+  background-color: rgb(69, 68, 68);
+}
+
+
+.team_area {
+  margin-top: 1%;
+  padding: 60px;
+  width: 100%;
+}
+
+.text h2 {
+  display: block;
+  font-weight: 700;
+  font-size: 35px;
+  margin-bottom: 10px;
+  text-align: center;
+  justify-content: center;
+}
+.text h2 span {
+  color: #ff5a6e;
+}
+.text h4 {
+  padding-bottom: 20px;
+  position: relative;
+  text-transform: capitalize;
+  z-index: 1;
+  text-align: center;
+  justify-content: center;
+}
+.text h4:before {
+  background: #ff5a6e none repeat scroll 0 0;
+  bottom: 0;
+  content: "";
+  height: 2px;
+  left:50%;
+  margin-left: -25px;
+  position: absolute;
+  width: 50px;
+}
+
+.profile-card {
+  width: 100%;
+  margin-left: 50px;
+  align-items: center;
+  justify-items: center;
+  margin-top: 10px;
+}
+
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 20px;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .column img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    box-shadow: 0 0 22px rgba(18, 18, 18, 0.4);
+    object-fit: cover;
+    transition: all 0.3s ease-in-out;
+    margin-left: 50px;
+  }
+  .column img:hover {
+    transform: scale(1.05) ;
+  }
+
+  .text1 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 80px;
+    padding-top: 10px;
+  }
+  .text2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 100px;
+    padding-top: 10px;
+  }
+  .text3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 125px;
+    padding-top: 10px;
+  }
+  
+  .social {
+    display: flex;
+    gap: 0.8rem;
+    padding-left: 50px;
+    padding-top: 10px;
+    margin-left: 55px;
+  }
+  .social button {
+    background-color: black;
+    border: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .social button i {
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    align-items: center;
+    align-content: center;
+  }
+  .social button:hover {
+    background-color: rgb(69, 68, 68);
+  }
+  .social1 {
+    display: flex;
+    gap: 0.8rem;
+    padding-left: 50px;
+    padding-top: 10px;
+    margin-left: 75px;
+  }
+  .social1 button {
+    background-color: black;
+    border: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .social1 button i {
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    align-items: center;
+    align-content: center;
+  }
+  .social1 button:hover {
+    background-color: rgb(69, 68, 68);
+  }
+
+  .social2 {
+    display: flex;
+    gap: 0.8rem;
+    padding-left: 50px;
+    padding-top: 10px;
+    margin-left: 70px;
+  }
+  .social2 button {
+    background-color: black;
+    border: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .social2 button i {
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    align-items: center;
+    align-content: center;
+  }
+  .social2 button:hover {
+    background-color: rgb(69, 68, 68);
+  }
+
+  .social3 {
+    display: flex;
+    gap: 0.8rem;
+    padding-left: 50px;
+    padding-top: 10px;
+    margin-left: 75px;
+  }
+  .social3 button {
+    background-color: black;
+    border: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .social3 button i {
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    align-items: center;
+    align-content: center;
+  }
+  .social3 button:hover {
+    background-color: rgb(69, 68, 68);
+  }
+  
