@@ -91,6 +91,8 @@
     min-height: 70vh;
     overflow: auto;
     display: flex;
+    position: relative;
+    z-index: -1;
 }
 
 .hero_section_title{
@@ -103,6 +105,9 @@
   height: 55vh;
   letter-spacing: 1px;
   line-height:1.2;
+  position: absolute;
+  top:0px;
+  left:50px;
 }
 
 .hero_section_title h2 {
@@ -142,8 +147,13 @@ h1 {
     height: 56px;
     top: 410px;
     margin-top: 10px;
+    cursor: pointer;
+    z-index: 3;
   }
 
+  .button5:hover{
+    outline:2px solid white;
+  }
   
 
   h1 span {
