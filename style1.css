@@ -175,11 +175,11 @@ h1 {
       width: 0;
     }
     15% {
-      width: 230px;
+      width: 255px;
     }
     30% {
       top: 0.2rem;
-      width: 230px;
+      width: 270px;
     }
     33% {
       top: 0.2rem;
@@ -233,14 +233,13 @@ h1 {
 
 
 
-  .container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 10rem;
-  padding-top: 20px;
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: -60px;
 }
 
 .card1 {
@@ -303,6 +302,7 @@ h1 {
   height:448px ; 
   background-color: white;
   background-image:linear-gradient(to right, rgb(253, 251, 251) , rgb(229, 229, 229));
+  padding:4px;
 }
 .card2 h1 {
   width: 250px;
@@ -354,6 +354,7 @@ h1 {
   height:448px ; 
   background-color: white;
   background-image:linear-gradient(to right, rgb(253, 251, 251) , rgb(229, 229, 229));
+  padding:0px;
 }
 .card3:hover {
   transform: scale(1.05);
@@ -435,6 +436,7 @@ h1 {
 .link__container {
   display: flex;
   flex-direction: column;
+  width: 150px;
 }
 .link__container h5 {
   font-weight: 800;
@@ -497,7 +499,7 @@ h1 {
 .text h2 {
   display: block;
   font-weight: 700;
-  font-size: 35px;
+  font-size: 40px;
   margin-bottom: 10px;
   text-align: center;
   justify-content: center;
@@ -511,7 +513,7 @@ h1 {
   text-transform: capitalize;
   z-index: 1;
   text-align: center;
-  justify-content: center;
+  letter-spacing: 3px;
 }
 .text h4:before {
   background: #ff5a6e none repeat scroll 0 0;
@@ -526,16 +528,23 @@ h1 {
 
 .profile-card {
   width: 100%;
-  margin-left: 50px;
   align-items: center;
-  justify-items: center;
-  margin-top: 10px;
+  margin-top: 65px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap:104px;
 }
 
   .column {
-    float: left;
-    width: 33.33%;
-    padding: 20px;
+    width: 220px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex:4;
+    justify-content: center;
   }
 
   .row::after {
@@ -551,7 +560,6 @@ h1 {
     box-shadow: 0 0 22px rgba(18, 18, 18, 0.4);
     object-fit: cover;
     transition: all 0.3s ease-in-out;
-    margin-left: 50px;
   }
   .column img:hover {
     transform: scale(1.05) ;
@@ -560,8 +568,7 @@ h1 {
   .text1 {
     font-size: 20px;
     font-weight: 600;
-    margin-left: 80px;
-    padding-top: 10px;
+    padding-top: 20px;
   }
   .text2 {
     font-size: 20px;
@@ -579,9 +586,7 @@ h1 {
   .social {
     display: flex;
     gap: 0.8rem;
-    padding-left: 50px;
     padding-top: 10px;
-    margin-left: 55px;
   }
   .social button {
     background-color: black;
