@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="pre.css">
+
+    <title> Prediction </title>
+</head>
+<body>
+    <section class="navi">
+        <header>
+            <nav class="navbar">
+                <img src="./images/Red_Modern_Love_Medical_Logo-removebg-preview.png">
+                <h1>Health At Priority</h1>
+                <div class="navbar__menu_container">
+                    <a href="#" class="link" style="width:39px ;">Home</a>
+                    <a href="#" class="link" style="width: 48px;">About</a>
+                    <a href="#" class="link" style="width: 96px;">Prediction</a>
+                    <a href="#" class="link" style="width: 96px;">Contact</a>
+                    <button class="button button4"><a href="#" class="link1" style="width: 68px;color: aliceblue;">TRY NOW</a></button>
+                </div>
+            </nav>
+        </header>
+    </section>
+
+    <section class="box">
+        <div class="square">
+            <span> PREDICTION </span>
+            <div class="info">
+                <form>
+                    <label for="fname">First name</label>
+                    <input type="text" id="fname" name="fname">
+                    <label for="lname">Last name</label>
+                    <input type="text" id="lname" name="lname">
+
+                    <br>
+                    <label for="ageoptions">Age</label>
+                    <select id="ageoptions" onchange="agefunc()" class="form-select bg-lite opacity-50 rounded" aria-label="Default select example" name="ageselect">
+                        <option value="0"> -- Select Age Category -- </option>
+                                <option value="1" data-p="False">
+                                    0 - 28 d (newborn)
+                                </option>
+                                <option value="2" data-p="False">
+                                    29 d - 1 yr (infant)
+                                </option>
+                                <option value="3" data-p="False">
+                                    1 - 5 yrs (younger child)
+                                </option>
+                                <option value="4" data-p="False">
+                                    6 - 12 yrs  (older child)
+                                </option>
+                                <option value="5" data-p="True">
+                                    13 - 16 yrs (adolescent)
+                                </option>
+                                <option value="6" data-p="True">
+                                    17 - 29 yrs (young adult)
+                                </option>
+                                <option value="7" data-p="True">
+                                    30 - 39 yrs (adult)
+                                </option>
+                                <option value="8" data-p="True">
+                                    40 - 49 yrs (adult)
+                                </option>
+                                <option value="9" data-p="True">
+                                    50 - 64 yrs (adult)
+                                </option>
+                                <option value="10" data-p="False">
+                                    65 yrs - over (senior)
+                                </option>
+                    </select>
+                    <br>
+                    <label for="gender" class="label-text"> Sex </label>
+                    <div id="gender">
+                        <button id="male" value="Male"> Male </button>
+                        <button id="Female" value="Female"> Female </button>
+                        <button id="Female" value="Female"> Others </button>
+                    </div>  
+
+                    
+                        
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
