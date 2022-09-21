@@ -1,4 +1,4 @@
-const endPoint = "http://localhost:8000/prediction.html/pred";
+const endPoint = "http://localhost:8000/test.html/pred";
 
 var functan = async () => {
     fetch(endPoint, {
