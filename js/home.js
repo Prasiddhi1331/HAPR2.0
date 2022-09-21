@@ -8,9 +8,6 @@ var functan = async () => {
   	'count': 1
   }),
 })
-// .then((res)=>{
-//     res.json();
-// })
   .then(data => data.json())
   .then(log => console.log(log))
   .catch((err) => console.log(err));
