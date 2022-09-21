@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/contact.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sacramento&display=swap" rel="stylesheet">
+
     <title>Contact</title>
 </head>
 <body>
@@ -21,6 +29,54 @@
                 </div>
             </nav>
         </header>
+    </section>
+
+    <section class="conti">
+        <section class="box" >
+            <div class="square">
+                <span> CONTACT </span>
+                <div class="info">
+                    <form>
+                        <div class="col-12">
+                            <div class="col-1">
+                                <label for="fname">First Name</label>
+                                <input type="text" id="fname" name="fname" placeholder="Your first name" required>
+                            </div>
+                            <div class="col-2">
+                                <label for="lname">Last Name</label>
+                                <input type="text" id="lname" name="lname" placeholder= "your last name" required>
+                            </div>
+                            
+                        </div>
+                
+                        <br>
+                        <div class="col-6">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Enter Your Email" required>
+                        </div>
+                       
+                        <div class="col-3">
+                            <label for="phone" class="form-label">Phone</label>
+                            <input type="phone" class="form-control" id="phone" name="phone" placeholder="Enter Your Phone no" required>
+                          </div>
+                          <div class="col-7">
+                              <label for="dis" class="form-label">Feedback</label>
+                              <textarea class="form-control" id="dis" name="dis" rows="3" placeholder="Enter your Feedback here" required></textarea>
+                          </div>
+                        
+                          <div class="col-8">
+                            <button type="submit" class="btn1">Submit</button>
+                            <button type="reset" class="btn2">Reset</button>
+                          </div>
+                        </form>
+                      </div>
+    
+                        
+                            
+                    </form>
+                </div>
+            </div>
+        </section>
     </section>
 </body>
 </html>
