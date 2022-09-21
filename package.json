@@ -1,0 +1,26 @@
+{
+  "name": "hapr2.0",
+  "version": "1.0.0",
+  "description": "HAPR",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Prasiddhi1331/HAPR2.0.git"
+  },
+  "author": "Piyush,Prasiddhi,Ayushri,Akash,Venky,Ayush",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Prasiddhi1331/HAPR2.0/issues"
+  },
+  "homepage": "https://github.com/Prasiddhi1331/HAPR2.0#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
