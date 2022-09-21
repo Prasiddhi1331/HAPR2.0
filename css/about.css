@@ -1,9 +1,6 @@
 .abot {
     height: 100vh;
     width: 100%;
-    background-image: url(../images/istockphoto-1222493448-612x612.jpg);
-    background-size:cover;
-    background-position: center;
 }
 
 .know {
@@ -27,19 +24,95 @@
     position: relative;
     right: 400px;
     bottom: 25px;
-    background-color: rgb(242, 251, 253);
+    background-color: white;
     text-align: center;
 }
+
+.left {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 25px;
+    gap: 40px;
+    top: 90px;
+    left: 40px;
+}
+
+.about_us {
+    border: none;
+    width: 16vw;
+    height: 21vh;
+    font-family: 'Merriweather', serif;
+    padding: 10px;
+    border-radius: 10px;
+    background-image:linear-gradient(to right, rgb(253, 251, 251) , rgb(229, 229, 229));
+}
+.about_us h1 {
+    font-size: 25px;
+    font-weight: 600;
+    margin: 10px;
+    text-align: center;
+}
+.about_us p {
+    font-size: 18px;
+    font-size: 600;
+    margin: 12px;
+    line-height: 1;
+}
+.about_us p:hover {
+    cursor: pointer;
+    text-decoration:underline black;
+}
+
+.policies {
+    border: none;
+    border-radius: 10px;
+    width: 16vw;
+    height: 36vh;
+    font-family: 'Merriweather', serif;
+    padding: 10px;
+    background-image:linear-gradient(to right, rgb(253, 251, 251) , rgb(229, 229, 229));
+}
+.policies h1 {
+    font-size: 25px;
+    font-weight: 600;
+    margin: 10px;
+    text-align: center;
+}
+.policies p {
+    font-size: 18px;
+    font-size: 600;
+    margin: 12px;
+    line-height: 1;
+}
+.policies p:hover {
+    cursor: pointer;
+    text-decoration:underline black;
+}
+
+
 
 .para {
     text-align: center;
     justify-content: center;
-    position: relative;
+    position: absolute;
     display: flex;
-    top: 70px;
-    flex-wrap: wrap;
-    flex-direction: column;
+    bottom: 20%;
+    left: 35%;
+    line-height: 2.5;
+    width: 100vh;
+    height: 50vh;
+    font-size: 20px;
 }
-.psrs p {
-    
+.para .a{
+    font-weight: 800;
+    font-size: 30px;
+    font-family: "Sofia", sans-serif;
+}
+.para .b {
+    font-size: 20px;
+    font-weight: 600;
+    color: red;
 }
