@@ -11,8 +11,16 @@ app.get(`/`,(req,res)=>{
     res.sendFile(__dirname+'/html/index.html');
 });
 
+app.get(`/index.html`,(req,res)=>{
+    res.sendFile(__dirname+'/html/index.html');
+});
+
 app.get(`/prediction.html`,(req,res)=>{
     res.sendFile(__dirname+'/html/prediction.html');
+});
+
+app.get(`/contact.html`,(req,res)=>{
+    res.sendFile(__dirname+'/html/contact.html');
 });
 
 app.listen(8000,()=>{
