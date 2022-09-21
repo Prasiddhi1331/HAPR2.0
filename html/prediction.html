@@ -46,56 +46,83 @@
             <span> PREDICTION </span>
             <div class="info">
                 <form>
-                    <label for="fname">First name</label>
-                    <input type="text" id="fname" name="fname">
-                    <label for="lname">Last name</label>
-                    <input type="text" id="lname" name="lname">
-
+                    <div class="col-12">
+                        <div class="col-1">
+                            <label for="fname">First Name</label>
+                            <input type="text" id="fname" name="fname" placeholder="Your first name" required>
+                        </div>
+                        <div class="col-2">
+                            <label for="lname">Last Name</label>
+                            <input type="text" id="lname" name="lname" placeholder= "your last name" required>
+                        </div>
+                    </div>
                     <br>
-                    <label for="ageoptions">Age</label>
-                    <select id="ageoptions" onchange="agefunc()" class="form-select bg-lite opacity-50 rounded" aria-label="Default select example" name="ageselect">
-                        <option value="0"> -- Select Age Category -- </option>
+                    <div class="col-6">
+                        <label for="age">Age</label>
+                        <select id="age" onchange="agefunc()" class="form-select bg-lite opacity-50 rounded" aria-label="Default select example" name="ageselect">
+                        <option value="0"> -- Select Month -- </option>
                                 <option value="1" data-p="False">
-                                    0 - 28 d (newborn)
+                                    January
                                 </option>
                                 <option value="2" data-p="False">
-                                    29 d - 1 yr (infant)
+                                    February
                                 </option>
                                 <option value="3" data-p="False">
-                                    1 - 5 yrs (younger child)
+                                    March
                                 </option>
                                 <option value="4" data-p="False">
-                                    6 - 12 yrs  (older child)
+                                    April
                                 </option>
                                 <option value="5" data-p="True">
-                                    13 - 16 yrs (adolescent)
+                                    May
                                 </option>
                                 <option value="6" data-p="True">
-                                    17 - 29 yrs (young adult)
+                                    June
                                 </option>
                                 <option value="7" data-p="True">
-                                    30 - 39 yrs (adult)
+                                    July
                                 </option>
                                 <option value="8" data-p="True">
-                                    40 - 49 yrs (adult)
+                                    August
                                 </option>
                                 <option value="9" data-p="True">
-                                    50 - 64 yrs (adult)
+                                    September
                                 </option>
                                 <option value="10" data-p="False">
-                                    65 yrs - over (senior)
+                                    October
+                                </option>
+                                <option value="11" data-p="False">
+                                    November
+                                </option>
+                                <option value="12" data-p="False">
+                                    December
                                 </option>
                     </select>
-                    <br>
-                    <label for="gender" class="label-text"> Sex </label>
-                    <div id="gender">
-                        <button id="male" value="Male"> Male </button>
-                        <button id="Female" value="Female"> Female </button>
-                        <button id="Female" value="Female"> Others </button>
-                    </div>  
+                    <input type="text" id="age" name="age" placeholder="Enter your year">
+                    </div>
+                    
 
-                    <label for="sym" class="label-text"> Symptoms </label>
-                    <button class="sym" ><input type="text" id="symname" name="symname"></button>
+                    
+                    <br>
+                    <div class="col-3">
+                        <label for="gender" class="label-text"> Sex </label>
+                    <div id="gender">
+                        <button class="male" value="Male"> Male </button>
+                        <button id="Female" value="Female"> Female </button>
+                        <button id="Others" value="Female"> Others </button>
+                    </div>  
+                    </div>
+                    
+                    <div class="col-7">
+                        <label for="sym" class="label-text"> Symptoms </label>
+                        <input type="text" id="symname" name="symname" placeholder="Enter symptoms" required>
+                    </div>
+
+                    <div class="col-8">
+                        <button type="submit" class="btn1">Submit</button>
+                        <button type="reset" class="btn2">Reset</button>
+                      </div>
+
 
                     
                         
