@@ -29,6 +29,14 @@ app.get(`/prediction.html`,(req,res)=>{
     res.sendFile(__dirname+'/html/prediction.html');
 });
 
+app.get(`/contact.html`,(req,res)=>{
+    res.sendFile(__dirname+'/html/contact.html');
+});
+
+app.get(`/about.html`,(req,res)=>{
+    res.sendFile(__dirname+'/html/about.html');
+});
+
 app.post(`/prediction.html/pred`,(req,res)=>{
     var data = req.body;
     console.log(data);

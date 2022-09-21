@@ -8,7 +8,7 @@
 
 .know {
     width: 98vw;
-    border-top: 3px solid rgb(197, 68, 68);
+    border-top: 3.5px solid rgb(197, 68, 68);
     position: relative;
     left: 8px;
     display: flex;
@@ -31,20 +31,14 @@
     text-align: center;
 }
 
-.logo img {
-    width: 23vw;
-    height: 30vh;
-    display: flex;
-    right: 60px;
-    position: relative;
-}
-
 .para {
     text-align: center;
     justify-content: center;
-    position: absolute;
+    position: relative;
     display: flex;
-    flex-wrap: wrap;flex-direction: column;
+    top: 70px;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 .psrs p {
     
