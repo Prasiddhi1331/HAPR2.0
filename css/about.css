@@ -1,0 +1,51 @@
+.abot {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../images/istockphoto-1222493448-612x612.jpg);
+    background-size:cover;
+    background-position: center;
+}
+
+.know {
+    width: 98vw;
+    border-top: 3px solid rgb(197, 68, 68);
+    position: relative;
+    left: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 80px;
+    padding: 0;
+    margin: 0;
+}
+
+.know span {
+    width: 10vw;
+    font-size: 35px;
+    font-weight: 600;
+    color: rgb(225, 14, 14);
+    position: relative;
+    right: 400px;
+    bottom: 25px;
+    background-color: rgb(242, 251, 253);
+    text-align: center;
+}
+
+.logo img {
+    width: 23vw;
+    height: 30vh;
+    display: flex;
+    right: 60px;
+    position: relative;
+}
+
+.para {
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;flex-direction: column;
+}
+.psrs p {
+    
+}
