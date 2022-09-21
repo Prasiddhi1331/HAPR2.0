@@ -1,7 +1,7 @@
 .box {
     height: 100vh;
     width: 100vw;
-    background-image: url(./images/heart-rate.gif);
+    background-image: url(../images/heart-rate.gif);
     background-size:cover;
 }
 
@@ -18,7 +18,7 @@
     top: 40px;
     padding: 0;
     margin: 0;
-    background-image: url(./images/sc-background-image-ngen.a3802848.webp);
+    background-image: url(../images/sc-background-image-ngen.a3802848.webp);
     background-size:contain;
     background-position: center;
 }
