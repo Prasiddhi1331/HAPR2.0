@@ -1,8 +1,9 @@
 .box {
     height: 100vh;
     width: 100vw;
-    background-: url(../images/hapr4.mp4);
+    background-image: url(../images/hapr4.gif);
     background-size:cover;
+    background-position: center;
 }
 
 .square {
