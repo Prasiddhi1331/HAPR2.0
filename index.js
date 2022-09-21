@@ -45,6 +45,10 @@ app.get(`/contact.html`,(req,res)=>{
     res.sendFile(__dirname+'/html/contact.html');
 });
 
+app.get(`/about.html`,(req,res)=>{
+    res.sendFile(__dirname+'/html/about.html');
+});
+
 app.listen(8000,()=>{
     console.log(`Server Started at port : ${8000}`);
 });
