@@ -1,14 +1,14 @@
 
+
 .hero_section_container {
   background: url(../images/Doc3.jpg);
   background-size:cover;
   background-position: center;
   color: white;
   min-height: 70vh;
+  width: 100%;
   overflow: auto;
   display: flex;
-  position: relative;
-  z-index: -1;
 }
 
 .hero_section_title{
@@ -21,7 +21,7 @@ height: 70vh;
 letter-spacing: 1px;
 line-height: 1.4;
 position: absolute;
-top: 0px;
+top: 20px;
 left: 50px;
 }
 
@@ -54,17 +54,17 @@ h1 {
 }
 
 .button5{
+  position: relative;
   background-color: #1B77CC;
   border-radius: 60px;
   padding: 8px 43px;
   justify-content: center;
   align-items: center;
   gap: 10px;
-  left: 40px;
+  left: 10px;
   border: none;
   width: 234px;
   height: 56px;
-  top: 410px;
   margin-top: 10px;
   cursor: pointer;
   z-index: 3;
@@ -164,6 +164,7 @@ h1 span {
 
 
 .container {
+  position: relative;
   width: 100%;
   display: flex;
   justify-content: space-evenly;
@@ -173,6 +174,7 @@ h1 span {
 }
 
 .card1 {
+  position: relative;
   border-radius: 19px;
   overflow: hidden;
   border: 1px solid #e0e0e0;
@@ -186,6 +188,8 @@ h1 span {
 width: 375px;
 left: 25px;
 padding: 25px;
+position: relative;
+top: 10px;
 font-size: 30px;
 text-align:center;
 justify-content:center;
@@ -224,6 +228,8 @@ transform: scale(1.08);
 }
 
 .card2 {
+  position: relative;
+  top: 15px;
 border-radius: 10px;
 overflow: hidden;
 border: 1px solid #000000;
@@ -235,6 +241,8 @@ background-image:linear-gradient(to right, rgb(253, 251, 251) , rgb(229, 229, 22
 padding:4px;
 }
 .card2 h1 {
+  position: relative;
+  top: 1px;
 width: 250px;
 left: 20px;
 font-size: 24px;
@@ -260,7 +268,6 @@ text-decoration: none;
 color: #ecebf1;
 background-color: #2f18b1; 
 border: none;
-color: white;
 padding: 15px 30px;
 text-align: center;
 text-decoration: none;
@@ -276,6 +283,8 @@ transform: scale(1.08);
 }
 
 .card3 {
+  position: relative;
+  top: 10px;
 border-radius: 10px;
 overflow: hidden;
 border: 1px solid #000000;
@@ -290,6 +299,8 @@ padding:0px;
 transform: scale(1.05);
 }
 .card3 h1 {
+  position: relative;
+  top: 1px;
 width: 250px;
 left: 20px;
 font-size: 24px;
