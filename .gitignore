@@ -1,4 +1,3 @@
-glove.840B.300d.pkl
+Pickled_Glove/glove.840B.300d.pkl
 dataset/Suicide_Detection.csv
-notebook/Model___Date_Time_2022_09_22__14_12_02___Loss_0.1817893087863922___Accuracy_0.9307767152786255.h5
-notebook/Model___Date_Time_2022_09_22__14_22_33___Loss_0.17781001329421997___Accuracy_0.9325002431869507.h5
+notebook/Model___Date_Time_2022_09_22__21_26_34___Loss_0.18113407492637634___Accuracy_0.931078314781189.h5
