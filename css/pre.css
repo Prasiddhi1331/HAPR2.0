@@ -1,6 +1,6 @@
 .box {
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     background-image: url(../images/hapr4.gif);
     background-size:cover;
     background-position: center;
@@ -135,7 +135,7 @@
     top: 40px;
 }
 .col-3 button {
-    background-color: #fff000;
+    background-color: #cfc212;
     border-radius: 15px;
     color: #000;
     cursor: pointer;
@@ -158,7 +158,7 @@
 
 #gender button:not(:disabled):hover, button:not(:disabled):focus {
     outline: 0;
-  background: #f4e603;
+  background: #fff700;
   box-shadow: 0 0 0 2px rgba(0,0,0,.2), 0 3px 8px 0 rgba(0,0,0,.15);
 }
 #gender button:disabled {
