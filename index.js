@@ -51,10 +51,6 @@ app.get(`/chat.html`,(req,res)=>{
     res.sendFile(__dirname+'/html/chat.html');
 });
 
-app.get(`/chatbot.html`,(req,res)=>{
-    res.sendFile(__dirname+'/html/chatbot.html');
-});
-
 app.get(`/test.html`,(req,res)=>{
     res.sendFile(__dirname+'/html/test.html');
 });
