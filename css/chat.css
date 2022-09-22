@@ -8,7 +8,6 @@
     height: 100vh;
     width: 100%;
     background: linear-gradient(10deg, #eff7f6, #a6d9f0, #eff7f6);
-    /*background-image: url(../images/depositphotos_156275360-stock-illustration-cute-cartoon-doctor-with-liver.jpg);*/
     background-position: center;
     background-size: cover;
   }
@@ -21,9 +20,10 @@
     border-radius: 15px;
     position: relative;
     box-shadow: 10px 10px 5px 1px rgb(230, 173, 223);
+    overflow: hidden;
   }
   
-  .chatbox form input {
+  .chatbox input {
     background-color: rgba(0, 0, 0, 0.03);
     position: absolute;
     bottom: 0;
@@ -40,3 +40,54 @@
     color: rgba(255, 255, 255, 0.9);
   }
   
+.chatarea{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  gap:30px;
+  overflow-y: scroll;
+  padding-top: 150px;
+  padding-bottom: 50px;
+  height: 92%;
+}
+
+.dp{
+  height:70px;
+  border-radius: 500px;
+}
+
+.bubble{
+  min-height:100px;
+  width:400px;
+  border-radius: 50px;
+  background-color: skyblue;
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+  padding-right: 45px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.user .dp{
+  position: relative;
+  left:320px;
+}
+
+.user{
+  position: relative;
+  left:100px;
+}
+
+.robo{
+  position: relative;
+  right:100px;
+}
+
+.red{
+  color:red;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-weight: 600;
+}

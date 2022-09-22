@@ -55,7 +55,7 @@ app.get(`/test.html`,(req,res)=>{
     res.sendFile(__dirname+'/html/test.html');
 });
 
-app.post(`/test.html/pred`,(req,res)=>{
+app.post(`/chat.html/pred`,(req,res)=>{
 
     res.set({
         'Content-Type': 'application/json',
