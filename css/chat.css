@@ -7,6 +7,7 @@
     flex-direction: column;
     height: 100vh;
     width: 100%;
+    background: linear-gradient(10deg, #eff7f6, #a6d9f0, #eff7f6);
     /*background-image: url(../images/depositphotos_156275360-stock-illustration-cute-cartoon-doctor-with-liver.jpg);*/
     background-position: center;
     background-size: cover;
@@ -19,7 +20,7 @@
     height: 80%;
     border-radius: 15px;
     position: relative;
-    box-shadow: 10px 10px 5px 1px lightblue;
+    box-shadow: 10px 10px 5px 1px rgb(230, 173, 223);
   }
   
   .chatbox form input {
