@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="../css/nav.css">
-    <link rel="stylesheet" href="../css/result.css">
+    <link rel="stylesheet" href="../css/chat.css">
     <link rel="stylesheet" href="../css/footer.css">
+    <script defer src="../js/chat.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,7 +21,7 @@
       referrerpolicy="no-referrer"
     />
 
-    <title>Result</title>
+    <title> Chat </title>
 </head>
 <body>
     <section class="navi">
@@ -29,7 +30,7 @@
                 <img src="../images/Red_Modern_Love_Medical_Logo-removebg-preview.png">
                 <h1>Health At Priority</h1>
                 <div class="navbar__menu_container">
-                    <a href="./" class="link">Home</a>
+                    <a href="./" class="link" >Home</a>
                     <a href="./about.html" class="link">About</a>
                     <a href="./prediction.html" class="link">Prediction</a>
                     <a href="./contact.html" class="link">Contact</a>
@@ -39,28 +40,42 @@
         </header>
     </section>
 
-    <section class="box">
-        <div class="square">
-            <span> RESULT </span>
-        </div>
-            <div class="left">
-                <div class="result_sec">
-                    <h1>Conditions that match your symptoms</h1>
-
-                    <div class="boxes">
-                        <div class="box1"></div>
-                        <div class="box1"></div>
-                        <div class="box1"></div>
-                    </div>
+    <section class="chat_sec">
+        <div class='container' ng-cloak ng-app="chatApp">
+            <div class='chatbox' ng-controller="MessageCtrl as chatMessage">
+              <div class='chatbox__user-list'>
+                <h1>User list</h1>
+                <div class='chatbox__user--active'>
+                  <p>Jack Thomson</p>
                 </div>
-                
-               
+                <div class='chatbox__user--busy'>
+                  <p>Angelina Jolie</p>
+                </div>
+                <div class='chatbox__user--active'>
+                  <p>George Clooney</p>
+                </div>
+                <div class='chatbox__user--active'>
+                  <p>Seth Rogen</p>
+                </div>
+                <div class='chatbox__user--away'>
+                  <p>John Lydon</p>
+                </div>
+              </div>
+              <div class="chatbox__messages" ng-repeat="message in messages">
+                <div class="chatbox__messages__user-message">
+                  <div class="chatbox__messages__user-message--ind-message">
+                    <p class="name">{{message.Name}}</p>
+                    <br />
+                    <p class="message">{{message.Message}}</p>
+                  </div>
+                </div>
+              </div>
+              <form>
+                <input type="text" placeholder="Enter your message">
+              </form>
             </div>
-        
-
-        
-
     </section>
+
 
 
     <footer>
@@ -101,5 +116,6 @@
           </div>
         </div>
       </footer>
+
 </body>
 </html>
