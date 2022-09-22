@@ -134,38 +134,51 @@
     left: 50px;
     top: 40px;
 }
-.col-3 button {
-    background-color: #cfc212;
+
+#gender{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#gender .bt {
+    background-color: #f6e605;
     border-radius: 15px;
-    color: #000;
-    cursor: pointer;
-    font-weight: bold;
     margin: 30px;
     width: 85px;
     height: 50px;
-    text-align: center;
     transition: 200ms;
-    padding: 7px 14px 9px;
     position: relative;
     left: 150px;
     box-sizing: border-box;
     border: 0;
-    font-size: 16px;
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#gender .bt span {
+    font-family: 'Merriweather', serif;
+    color: black;
+    font-weight: 600;
+    text-align: center;
+    position: relative;
+    font-size: 15px;
+    background-color: transparent;
+    bottom:0px;
 }
 
-#gender button:not(:disabled):hover, button:not(:disabled):focus {
-    outline: 0;
-  background: #fff700;
-  box-shadow: 0 0 0 2px rgba(0,0,0,.2), 0 3px 8px 0 rgba(0,0,0,.15);
+#gender div:focus {
+    background-color: #005eff;
 }
-#gender button:disabled {
-    filter: saturate(0.2) opacity(0.5);
-    -webkit-filter: saturate(0.2) opacity(0.5);
-    cursor: not-allowed;
-  }
+#gender .bt:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    cursor: pointer;
+}
 
 
 .col-7 {
@@ -195,6 +208,7 @@
     width: 40%;
     top: 10px;
 }
+
 .col-7 input:hover{
     border: 2px solid red;
 }
@@ -216,6 +230,15 @@
     font-size: 15px;
     font-weight: 600;
     font-family:'Merriweather', serif ;
+}
+.col-8 button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+.col-8 .btn1 a {
+    text-decoration: none;
+    color: black;
 }
 .col-8 .btn1 {
     background-color: rgb(25, 94, 222);

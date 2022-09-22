@@ -49,7 +49,7 @@
                     <div class="col-12">
                         <div class="col-1">
                             <label for="fname">First Name</label>
-                            <input type="text" id="fname" name="fname" placeholder="Your first name" required>
+                            <input type="text" id="fname" name="fname" placeholder="Your first name">
                         </div>
                         <div class="col-2">
                             <label for="lname">Last Name</label>
@@ -107,19 +107,19 @@
                     <div class="col-3">
                         <label for="gender" class="label-text"> Sex </label>
                     <div id="gender">
-                        <button class="male" value="Male"> Male </button>
-                        <button id="Female" value="Female"> Female </button>
-                        <button id="Others" value="Female"> Others </button>
+                        <div class="bt" value="Male" tabindex="1"><span>Male</span></div>
+                        <div class="bt" value="Female" tabindex="1"><span>Female</span></div>
+                        <div class="bt" value="Female" tabindex="1"><span>Others</span></div>
                     </div>  
                     </div>
                     
                     <div class="col-7">
                         <label for="sym" class="label-text"> Symptoms </label>
-                        <input type="text" id="symname" name="symname" placeholder="Enter symptoms" required>
+                        <input type="text" id="symname" name="symname" placeholder="Enter symptoms" >
                     </div>
 
                     <div class="col-8">
-                        <button type="submit" class="btn1">Submit</button>
+                        <button type="submit" class="btn1"><a href="./result.html">Submit</button></a>
                         <button type="reset" class="btn2">Reset</button>
                       </div>
 

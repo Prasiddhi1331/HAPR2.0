@@ -61,6 +61,10 @@ app.get(`/prediction.html`,(req,res)=>{
     res.sendFile(__dirname+'/html/prediction.html');
 });
 
+app.get(`/result.html`,(req,res)=>{
+    res.sendFile(__dirname+'/html/result.html');
+});
+
 app.post(`/test.html/pred`,(req,res)=>{
     const spawn = require('child_process').spawn;
 

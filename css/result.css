@@ -1,0 +1,33 @@
+.box {
+    height: 100vh;
+    width: 100%;
+}
+
+.square {
+    height: 80vh;
+    width: 60vw;
+    border: 2px solid rgb(9, 9, 9);
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: 25%;
+    top: 40px;
+    padding: 0;
+    margin: 0;
+    background-image: url(../images/sc-background-image-ngen.a3802848.webp);
+    background-size:contain;
+    background-position: center;
+}
+
+.square span {
+    width: 12vw;
+    font-size: 26px;
+    font-weight: 600;
+    color: rgb(225, 14, 14);
+    position: relative;
+    bottom: 15px;
+    background-color: white;
+    text-align: center;
+}
