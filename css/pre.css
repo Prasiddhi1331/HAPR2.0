@@ -8,8 +8,8 @@
 
 .square {
     height: 80vh;
-    width: 50vw;
-    border: 2px solid rgb(197, 68, 68);
+    width: 60vw;
+    border: 2px solid rgb(9, 9, 9);
     border-radius: 20px;
     position: relative;
     display: flex;
@@ -42,63 +42,119 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    padding: 0px;
 }
 
-label {
+.col-12 {
     font-size: 20px;
     font-weight: 600;
     position: relative;
     margin: 10px;
-}
-
-input {
-    border: 1.5px solid;
-    border-radius: 5px;
-    position: relative;
-    height: 25px;
-    width: 14vw;
-    margin-right: 10px;
-}
-
-#ageoptions {
-    border: 1.5px solid;
-    border-radius: 5px;
-    position: relative;
-    height: 25px;
-    width: 15vw;
-    margin: 25px;
-    text-align: center;
-}
-
-.label-text{
-    position: relative;
     display: flex;
-    left: 100px;
+    flex-direction: row;
+    font-family: 'Merriweather', serif;
+    gap: 10px;
 }
 
-#gender {
+.col-1, .col-2 {
     position: relative;
-    bottom: 48px;
+    padding: 5px;
+    margin: 10px;
 }
 
-#gender button {
+.col-12 input {
+    border: 1px solid rgb(1, 1, 1); 
+    padding: 7px 14px 9px; 
+    transition: 0.4s;
+    border-radius: 5px;
+    position: relative;
+    margin: 12px;
+}
+.col-12 input:hover {
+    border: 2px solid red; 
+}
+
+.col-6 {
+    font-size: 20px;
+    font-weight: 600;
+    position: relative;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Merriweather', serif;
+    gap: 50px;
+    left: 40px;
+}
+.col-6 label {
+    position: relative;
+    top: 18px;
+}
+
+.col-6 select {
+    text-align: center;
+    border: 1px solid black;
+    padding: 7px 14px 9px;
+    transition: 0.4s;
+    position: relative;
+    width: 28%;
+    left: 30px;
+    margin: 12px;
+    border-radius: 5px;
+}
+.col-6 select:hover {
+    border: 2px solid red;
+}
+.col-6 input:hover {
+    border: 2px solid red;
+}
+.col-6 input {
+    width: 28%;
+    border: 1px solid black;
+    padding: 7px 14px 9px;
+    transition: 0.4s;
+    position: relative;
+    left: 30px;
+    margin: 12px;
+    border-radius: 5px;
+}
+
+.col-3{
+    font-size: 20px;
+    font-weight: 600;
+    position: relative;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Merriweather', serif;
+    gap: 20px;
+}
+
+.col-3 label {
+    position: relative;
+    left: 50px;
+    top: 40px;
+}
+.col-3 button {
     background-color: #fff000;
-    border-radius: 12px;
+    border-radius: 15px;
     color: #000;
     cursor: pointer;
     font-weight: bold;
-    padding: 10px ;
-    margin: 10px;
+    margin: 30px;
     width: 85px;
+    height: 50px;
     text-align: center;
     transition: 200ms;
+    padding: 7px 14px 9px;
+    position: relative;
+    left: 150px;
     box-sizing: border-box;
     border: 0;
     font-size: 16px;
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
-  }
+}
 
 #gender button:not(:disabled):hover, button:not(:disabled):focus {
     outline: 0;
@@ -110,3 +166,68 @@ input {
     -webkit-filter: saturate(0.2) opacity(0.5);
     cursor: not-allowed;
   }
+
+
+.col-7 {
+    font-size: 20px;
+    font-weight: 600;
+    position: relative;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Merriweather', serif;
+    gap: 1px;
+}
+.col-7 label {
+    position: relative;
+    left: 20px;
+    top: 30px;
+    
+}
+.col-7 input {
+    border: 1px solid rgb(1, 1, 1); 
+    padding: 7px 14px 9px; 
+    transition: 0.4s;
+    border-radius: 5px;
+    position: relative;
+    margin: 12px;
+    left: 50px;
+    width: 40%;
+    top: 10px;
+}
+.col-7 input:hover{
+    border: 2px solid red;
+}
+
+.col-8 {
+    position: relative;
+    align-items: center;
+    margin: 15px;
+    padding: 0px;
+}
+.col-8 button {
+    position: relative;
+    margin: 20px;
+    top: 25px;
+    width: 90px;
+    height: 50px;
+    border: none;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: 600;
+    font-family:'Merriweather', serif ;
+}
+.col-8 .btn1 {
+    background-color: rgb(25, 94, 222);
+}
+.col-8 .btn2 {
+    background-color: rgb(229, 45, 45);
+}
+.col-8 .btn1:hover {
+    background-color:rgb(5, 46, 250) ;
+    cursor: pointer;
+}
+.col-8 .btn2:hover {
+    background-color: rgb(255, 0, 0);
+    cursor: pointer;
+}
