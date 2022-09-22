@@ -7,7 +7,7 @@
   min-height: 70vh;
   overflow: auto;
   display: flex;
-  /*position: relative;*/
+  position: relative;
   z-index: -1;
 }
 
@@ -26,7 +26,9 @@ left: 50px;
 }
 
 .hero_section_title h2 {
+position: relative;
 font-size: 90px;
+bottom: 40px;
 font-family: "Audiowide", sans-serif;
 text-shadow: 3px 3px 3px #ababab;
 color: red;
@@ -42,11 +44,13 @@ h1 {
   color: rgb(15, 14, 14);
   font-size: 3rem;
   font-weight: 90;
-  line-height: 1.5;
+  line-height: 1.4;
   white-space: nowrap;
   overflow: hidden;
   position: relative;
+  bottom: 40px;
   width: 600px;
+  right: 35px;
 }
 
 .button5{
