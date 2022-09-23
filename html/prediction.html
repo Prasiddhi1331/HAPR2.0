@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../css/nav.css">
     <link rel="stylesheet" href="../css/pre.css">
     <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/drop.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -45,7 +46,6 @@
         <div class="square">
             <span> PREDICTION </span>
             <div class="info">
-                <form>
                     <div class="col-12">
                         <div class="col-1">
                             <label for="fname">First Name</label>
@@ -114,19 +114,34 @@
                     </div>
                     
                     <div class="col-7">
-                        <label for="sym" class="label-text"> Symptoms </label>
-                        <input type="text" id="symname" name="symname" placeholder="Enter symptoms" >
+                        <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn">Add <span id="sym_cnt"></span> Symptoms</button>
+                            <div id="myDropdown" class="dropdown-content">
+                              <input type="text" placeholder="Search Symptoms.." id="myInput" onkeyup="filterFunction()">
+                              <a href="#about">About</a>
+                              <a href="#base">Base</a>
+                              <a href="#blog">Blog</a>
+                              <a href="#contact">Contact</a>
+                              <a href="#custom">Custom</a>
+                              <a href="#support">Support</a>
+                              <a href="#tools">Tools</a>
+                              <a href="#contact">Contact</a>
+                              <a href="#custom">Custom</a>
+                              <a href="#support">Support</a>
+                              <a href="#tools">Tools</a> 
+                              <a href="#contact">Contact</a>
+                              <a href="#custom">Custom</a>
+                              <a href="#support">Support</a>
+                              <a href="#tools">Tools</a>
+                            </div>
+                          </div>
                     </div>
 
                     <div class="col-8">
                         <button type="submit" class="btn1"><a href="./result.html">Submit</button></a>
                         <button type="reset" class="btn2">Reset</button>
-                      </div>
-
-
-                    
+                      </div>                  
                         
-                </form>
             </div>
         </div>
     </section>

@@ -189,9 +189,10 @@
     display: flex;
     flex-direction: row;
     font-family: 'Merriweather', serif;
-    gap: 1px;
+    align-items: center;
+    justify-content: center;
 }
-.col-7 label {
+/* .col-7 label {
     position: relative;
     left: 20px;
     top: 30px;
@@ -211,7 +212,7 @@
 
 .col-7 input:hover{
     border: 2px solid red;
-}
+} */
 
 .col-8 {
     position: relative;
