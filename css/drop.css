@@ -49,11 +49,12 @@
     overflow-y: scroll;
   }
   
-  .dropdown-content a {
+  .dropdown-content p {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    cursor: pointer;
   }
 
   .focus {
@@ -61,7 +62,7 @@
     color:white;
 }
   
-  .dropdown a:hover {
+  .dropdown p:hover {
     background-color: rgb(225, 14, 14);
     color:white;
 }

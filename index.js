@@ -85,14 +85,30 @@ app.post(`/chat.html/pred`,(req,res)=>{
 });
 
 app.post(`/prediction.html/pred`,(req,res)=>{
-    var data = req.body;
-    console.log(data);
     res.set({
         'Content-Type': 'application/json',
         'Access-Control-Allow-Methods': "OPTIONS,POST,GET",
         'Access-Control-Allow-Origin': "*"
     });
-    return res.send(JSON.stringify({"Posted":"Hello"}));
+
+    const data = req.body
+
+    let stringifiedData = JSON.stringify(data);
+
+    const py = spawn('python', ['Python/backend2.py', stringifiedData]);
+
+    resultString = '';
+    py.stdout.on('data', function (stdData) {
+        console.log("here1");
+        console.log(resultString);
+        resultString += stdData.toString();
+    });
+
+    py.stdout.on('end', function () {
+        console.log("here");
+        console.log(JSON.parse(resultString));
+        return res.send(JSON.stringify(resultString));
+    });
 });
 
 app.listen(8000,()=>{
